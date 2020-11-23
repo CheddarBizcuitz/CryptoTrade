@@ -15,7 +15,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 
-Private Sub iGoTo_Click()
+Private Sub pGoTo_Click()
 
 Application.ScreenUpdating = False
 Application.DisplayStatusBar = False

@@ -1,7 +1,7 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} ufTransactionHelp 
    Caption         =   "Transaction Type - Description [Named Range]"
-   ClientHeight    =   8028
+   ClientHeight    =   9996
    ClientLeft      =   108
    ClientTop       =   456
    ClientWidth     =   5976

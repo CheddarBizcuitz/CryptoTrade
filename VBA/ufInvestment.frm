@@ -15,7 +15,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 
-Private Sub iAdd_Click()
+Private Sub pAdd_Click()
 
 ActiveSheet.Unprotect
 
@@ -58,14 +58,14 @@ ActiveSheet.Protect
 
 End Sub
 
-Private Sub iBack_Click()
+Private Sub pBack_Click()
 
     Me.Hide
     ufListings.Show
 
 End Sub
 
-Private Sub iRemove_Click()
+Private Sub pRemove_Click()
 
 ActiveSheet.Unprotect
 

@@ -4,7 +4,7 @@ Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} ufListings
    ClientHeight    =   2652
    ClientLeft      =   108
    ClientTop       =   456
-   ClientWidth     =   4584
+   ClientWidth     =   4356
    OleObjectBlob   =   "ufListings.frx":0000
    StartUpPosition =   1  'CenterOwner
 End
