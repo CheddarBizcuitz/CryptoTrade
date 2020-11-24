@@ -96,9 +96,9 @@ Stake | cStake
 ```
 = IF($D4="","",IF($F4=cStake,0,$D4*0.001))
 ```
-3. Say you're not interested in 'Estimated Profit' data and would like to pull something else into the 'Master'. Through the module [mPullData.bas](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/VBA/mPullData.bas), you can alter the selected pull value and table column. The referenced cell should always relate to the 'Temp' worksheet. 
+3. Through the module [mPullData.bas](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/VBA/mPullData.bas), you can alter the selected pull value(s) and column(s) on the 'Master' table. Referenced cells should always relate back to the 'Temp' worksheet. 
 
-    **Note:** Referenced cell value(s) needs to be converted to text before pulling.
+    **Note:** It is recommended that referenced cell value(s) be converted to text before pulling.
 
 ```
 ABC100 = TEXT(Temp!A1,"$#,##0.00")
