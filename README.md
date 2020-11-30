@@ -81,7 +81,9 @@ SWB = Source Workbook (current user release)
 To determine the proper line count per worksheet, use the formula ((n-4)+1)-m), where 
 
 n = last row # in SWB  
-m = # of rows already present in DWB (preset as 3)  
+m = # of rows already present in DWB (preset as 3)
+
+**Note:** When transferring data between workbooks, it is recommended to paste values as 'formulas' to avoid cross-referencing. It is also recommended that you do **NOT** reference specific table columns within formulas as this will link back to the source workbook.
 
 ## Tips
 
