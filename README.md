@@ -81,7 +81,9 @@ SWB = Source Workbook (current user release)
 To determine the proper line count per worksheet, use the formula ((n-4)+1)-m), where 
 
 n = last row # in SWB  
-m = # of rows already present in DWB (preset as 3)  
+m = # of rows already present in DWB (preset as 3)
+
+**Note:** When transferring data between workbooks, it is recommended to paste values as 'formulas' to avoid cross-referencing. It is also recommended that you do **NOT** reference specific table columns within formulas as this will link back to the source workbook.
 
 ## Tips
 
@@ -108,7 +110,7 @@ ABC100 = TEXT(Temp!A1,"$#,##0.00")
     For Each sh In Sheets
         For Each c In Rng.Cells
             If sh.Name = c Then
-                c.Offset(0, 1) = sh.Range("R3").Value ' Offset to right from 0 column 'Coin' (1 = Investment)
+                c.Offset(0, 1) = sh.Range("R3").Value ' Offset to right from 0 column 'Coin' (1 = % Value)
                 c.Offset(0, 2) = sh.Range("S3").Value '                                      (2 = Coin Balance)
                 c.Offset(0, 3) = sh.Range("T3").Value '                                      (3 = USD Balance)
                 c.Offset(0, 4) = sh.Range("ABC100").Value '                                  (4 = 'Example')
