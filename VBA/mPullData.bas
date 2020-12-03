@@ -22,7 +22,7 @@ Application.EnableEvents = False
     For Each sh In Sheets
         For Each c In Rng.Cells
             If sh.Name = c Then
-                c.Offset(0, 1) = sh.Range("R3").Value
+                c.Offset(0, 1) = sh.Range("AC44").Value
                 c.Offset(0, 2) = sh.Range("S3").Value
                 c.Offset(0, 3) = sh.Range("T3").Value
                 c.Offset(0, 4) = sh.Range("U3").Value
@@ -36,10 +36,6 @@ Application.EnableEvents = False
     Next sh
      
     ActiveSheet.Range("Table1").Borders.LineStyle = xlNone
-    
-    ActiveSheet.Range("Table1[Investment]").Select
-    Selection.Locked = True
-    Selection.FormulaHidden = True
     
     Range("B7").Select
     

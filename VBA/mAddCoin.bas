@@ -13,7 +13,7 @@ Application.EnableEvents = False
         MsgBox "Please add blank cell before data re-entry. See 'Notes' for more details.", vbOKOnly, "Hello."
      Else
 
-    If IsNumeric(Application.Match(CoinLibrary.Range("B3"), CoinLibrary.Range("B4:B103"), 0)) Then
+    If IsNumeric(Application.Match(CoinLibrary.Range("B3"), CoinLibrary.Range("B4:B110"), 0)) Then
         CoinList.Range("B7:H7").Select
             Selection.Locked = False
         CoinList.Range("B7").Value = CoinList.ComboBox1.Value
