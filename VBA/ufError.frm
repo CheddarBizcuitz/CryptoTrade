@@ -65,8 +65,6 @@ Application.EnableEvents = False
             End With
  
     End If
- 
-    Range("B4").Select
     
     Me.Hide
     Me.Show
