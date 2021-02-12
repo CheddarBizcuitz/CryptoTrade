@@ -21,6 +21,8 @@ CryptoTrade is an interactive spreadsheet that tracks your cryptocurrency trades
 
 CryptoTrade is free to use and can run on Excel Versions 2010 or later.
 
+Check out the tutorial at: https://www.youtube.com/watch?v=oP9bFYzBpYU
+
 ## Live-Feed Data
 
 CryptoTrade currently uses [Nomics API](https://nomics.com/) to generate free, live-feed data on thousands of cryptocurrencies.
