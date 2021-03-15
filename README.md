@@ -21,7 +21,7 @@ CryptoTrade is an interactive spreadsheet that tracks your cryptocurrency trades
 
 CryptoTrade is free to use and can run on Excel Versions 2010 or later.
 
-Check out the tutorial [here](https://www.youtube.com/watch?v=oP9bFYzBpYU).
+For more information, please check out the [tutorial](https://www.youtube.com/watch?v=oP9bFYzBpYU).
 
 ## Live-Feed Data
 
@@ -122,9 +122,11 @@ ABC100 = TEXT(Temp!A1,"$#,##0.00")
         Next c
     Next sh
 ```
-4. You can add coins directly to the CoinLibrary within the "Library" worksheet. There are currently 147 slots open with 111 slots pre-populated. 
+4. You can add coins directly to the CoinLibrary within the "Library" worksheet, Column B. There are currently 147 slots open with 111 slots pre-populated. 
 
     To increase the total number of slots, adjust the range within the following [worksheet](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN1.png?raw=true) and [module](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN2.png?raw=true).
+    
+    **Note:** The API does not host data for all coins. It's important to enter the coin under the format: Coin Name (Ticker Symbol) in order to verify connection.
 
 ## Downloads
 
