@@ -124,7 +124,7 @@ ABC100 = TEXT(Temp!A1,"$#,##0.00")
 ```
 4. You can add coins directly to the CoinLibrary within the "Library" worksheet. There are currently 147 slots open with 111 slots pre-populated. 
 
-    To increase the total number of slots, adjust the range within the following [worksheet](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN1) and [module](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN2).
+    To increase the total number of slots, adjust the range within the following [worksheet](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN1.png?raw=true) and [module](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN2.png?raw=true).
 
 ## Downloads
 
