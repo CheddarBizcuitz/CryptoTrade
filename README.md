@@ -89,7 +89,8 @@ m = # of rows already present in DWB (preset as 3)
 
 ## Tips
 
-1. All coin sheets are populated from the 'Temp' worksheet. You can unhide and edit this sheet prior to generating. This will ensure that each sheet has both the correct and identical user 'preset' data.
+1. All coin sheets are populated from the 'Temp' worksheet. You can unhide and edit this sheet prior to generating. This will ensure that each sheet has both correct and identical user 'preset' data.
+
 2. If the coin fee is consistent among a number of data entries, you can auto-populate the column by adding a formula to cell **"G4"**. Reference to 'Transaction Type' is likely the most efficient option and can be linked through the corresponding named range.  
 For example:
 
@@ -121,6 +122,9 @@ ABC100 = TEXT(Temp!A1,"$#,##0.00")
         Next c
     Next sh
 ```
+4. You can add coins directly to the CoinLibrary within the "Library" worksheet. There are currently 147 slots open with 111 slots pre-populated. 
+
+    To increase the total number of slots, adjust the range within the following [worksheet](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN1) and [module](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN2).
 
 ## Downloads
 
