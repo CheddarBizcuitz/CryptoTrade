@@ -64,6 +64,8 @@ Application.EnableEvents = False
      End With
  
     End If
+
+ActiveSheet.Range("B4").Select
     
 Application.ScreenUpdating = True
 Application.DisplayStatusBar = True

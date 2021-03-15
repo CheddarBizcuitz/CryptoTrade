@@ -54,6 +54,17 @@ Application.EnableEvents = False
             addmultirow
         Next I
         
+ActiveSheet.Unprotect
+        
+    Range("AN4:AQ4").Select
+        Selection.AutoFill Destination:=Range("IRSdatatable")
+    
+    Range("BA4:BD4").Select
+        Selection.AutoFill Destination:=Range("IRSdatatableFIN")
+    
+ActiveSheet.Protect DrawingObjects:=True, Contents:=True, Scenarios:=True _
+    , AllowSorting:=True, AllowFiltering:=True
+        
 Application.Calculation = xlCalculationAutomatic
 Application.ScreenUpdating = True
 Application.DisplayStatusBar = True

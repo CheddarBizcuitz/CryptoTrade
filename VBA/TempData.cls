@@ -11,10 +11,10 @@ Option Explicit
 
 Private Sub Worksheet_Activate()
 
-    With ActiveWindow
-        .DisplayHorizontalScrollBar = True
-        .DisplayVerticalScrollBar = True
-    End With
+'    With ActiveWindow
+'        .DisplayHorizontalScrollBar = True
+'        .DisplayVerticalScrollBar = True
+'    End With
     
 End Sub
 Private Sub bAddRow_Click()
@@ -36,7 +36,11 @@ Application.EnableEvents = False
     Range("TempTableData").Select
         Selection.RowHeight = 18
     
-    Range("B4").Select
+    Range("AN4:AQ4").Select
+        Selection.AutoFill Destination:=Range("IRSdatatable")
+        
+    Range("BA4:BD4").Select
+        Selection.AutoFill Destination:=Range("IRSdatatableFIN")
     
 Application.Calculation = xlCalculationAutomatic
 Application.ScreenUpdating = True
@@ -77,8 +81,15 @@ Application.DisplayAlerts = False
      On Error Resume Next
  
     End If
-     
-    Range("B4").Select
+    
+    Range("H4:P4").Select
+        Selection.AutoFill Destination:=Range("FormulaFill")
+    
+    Range("AN4:AQ4").Select
+        Selection.AutoFill Destination:=Range("IRSdatatable")
+    
+    Range("BA4:BD4").Select
+        Selection.AutoFill Destination:=Range("IRSdatatableFIN")
 
 Application.Calculation = xlCalculationAutomatic
 Application.ScreenUpdating = True
