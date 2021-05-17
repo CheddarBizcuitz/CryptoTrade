@@ -85,13 +85,13 @@ To determine the proper line count per worksheet, use the formula ((n-4)+1)-m), 
 n = last row # in SWB  
 m = # of rows already present in DWB (preset as 3)
 
-**Note:** When transferring data between workbooks, it is recommended to paste values as 'formulas' to avoid cross-referencing. It is also recommended that you do **NOT** reference specific table columns within formulas as this will link back to the source workbook.
+**Note:** When transferring data between workbooks, it is recommended to paste values as formulas to avoid cross-referencing. It is also recommended that you do **NOT** reference specific table columns within formulas as this will link back to the source workbook.
 
 ## Tips
 
-1. All coin sheets are populated from the 'Temp' worksheet. You can unhide and edit this sheet prior to generating. This will ensure that each sheet has both correct and identical user 'preset' data.
+1. All coin sheets are populated from the "Temp" worksheet. You can unhide and edit this sheet prior to generating. This will ensure that each sheet has both correct and identical user preset data.
 
-2. If the coin fee is consistent among a number of data entries, you can auto-populate the column by adding a formula to cell **"G4"**. Reference to 'Transaction Type' is likely the most efficient option and can be linked through the corresponding named range.  
+2. If the coin fee is consistent among a number of data entries, you can auto-populate the column by adding a formula to cell **"G4"**. Reference to "Transaction Type" is likely the most efficient option and can be linked through the corresponding named range.  
 For example:
 
 Transaction Type | Named Range
@@ -101,7 +101,7 @@ Stake | cStake
 ```
 = IF($D4="","",IF($F4=cStake,0,$D4*0.001))
 ```
-3. Through the module [mPullData.bas](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/VBA/mPullData.bas), you can alter the selected pull value(s) and column(s) on the 'Master' table. Referenced cells should always relate back to the 'Temp' worksheet. 
+3. Through the module [mPullData.bas](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/VBA/mPullData.bas), you can alter the selected pull value(s) and column(s) on the "Master" table. Referenced cells should always relate back to the "Temp" worksheet. 
 
     **Note:** It is recommended that referenced cell value(s) be converted to text before pulling.
 
@@ -126,7 +126,13 @@ ABC100 = TEXT(Temp!A1,"$#,##0.00")
 
     To increase the total number of slots, adjust the range within the following [worksheet](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN1.png?raw=true) and [module](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/IMAGES/COIN2.png?raw=true).
     
-    **Note:** The API does not host data for all coins. It's important to enter the coin under the format: Coin Name (Ticker Symbol) in order to verify connection.
+    **Note:** The API does not host data for all coins. It's important to enter the coin under the format: Coin Name (Ticker Symbol) in order to verify connection. 
+    
+5. Any staked, locked or wrapped coin is considered to be a 1:1 value - just add the transaction fee when applicable.
+
+6. If adding/removing liquidity from a pool, note the **transaction action** value within the given smart contract(s); then add the value to your sheet using the "stake" transaction type. Use negative values to account for impermanent loss - ETH fees should be kept on a seperate line.
+
+7. If leverage trading, add entries as normal. This will affect the "Total Account Balance" and subsequent calculations on the "Master" worksheet until the order is closed.
 
 ## Downloads
 
