@@ -22,15 +22,15 @@ Application.DisplayStatusBar = False
 Application.EnableEvents = False
 
     Dim ws As Worksheet
-    Dim wsname As String
+    Dim wsName As String
 
-    wsname = ListBox1.Value
+    wsName = ListBox1.Value
 
     If ListBox1.Selected(ListBox1.ListIndex) = True Then
     
         For Each ws In Application.Worksheets
     
-            If wsname = ws.Name Then
+            If wsName = ws.Name Then
             
                 ws.Activate
             

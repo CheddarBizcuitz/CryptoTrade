@@ -72,7 +72,11 @@ Listings.Activate
  
     End If
 
+    Me.Hide
+    
 Listings.Visible = False
+      
+    Me.Show
 
 Application.ScreenUpdating = True
 Application.DisplayStatusBar = True

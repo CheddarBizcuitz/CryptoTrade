@@ -104,7 +104,11 @@ Listings.Activate
         
     End With
  
+    Me.Hide
+    
 Listings.Visible = False
+      
+    Me.Show
 
 Application.Calculation = xlCalculationAutomatic
 Application.ScreenUpdating = True
