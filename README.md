@@ -134,7 +134,7 @@ ABC100 = TEXT(Temp!A1,"$#,##0.00")
 
 7. If leverage trading, add entries as normal. This will affect the "Total Account Balance" and subsequent calculations on the "Master" worksheet until the order is closed.
 
-8. NFTs minted through an EVP (Expected Value Pool) may be prone to contract value error due to the nature of the distribution.
+8. NFTs minted through an EVP (Expected Value Pool) may be prone to contract error due to the nature of distribution (account for reimbursement funds when necessary). This is also applicable to Dutch auction sales.
 
 ## Downloads
 
