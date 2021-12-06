@@ -13,27 +13,29 @@ Application.ScreenUpdating = False
 Application.DisplayStatusBar = False
 Application.EnableEvents = False
   
-    Dim ws As Worksheet, Sh As Worksheet
+    Dim ws As Worksheet, sh As Worksheet
     Dim Rng As Range, c As Range
 
     Set ws = Sheets("Master")
     Set Rng = ws.Range("B7:B100")
     
-    For Each Sh In Sheets
+    For Each sh In Sheets
         For Each c In Rng.Cells
-            If Sh.Name = c Then
-                c.Offset(0, 1) = Sh.Range("AC44").Value
-                c.Offset(0, 2) = Sh.Range("S3").Value
-                c.Offset(0, 3) = Sh.Range("T3").Value
-                c.Offset(0, 4) = Sh.Range("U3").Value
-                c.Offset(0, 5) = Sh.Range("V3").Value
-                c.Offset(0, 6) = Sh.Range("W3").Value
-                c.Offset(0, 11) = Sh.Range("S17").Value
-                c.Offset(0, 12) = Sh.Range("S18").Value
-                c.Offset(0, 13) = Sh.Range("AC24").Value
+            If sh.Name = c Then
+                c.Offset(0, 1) = sh.Range("AC44").Value     ' % value
+                c.Offset(0, 2) = sh.Range("S3").Value       ' coin balance
+                c.Offset(0, 3) = sh.Range("T3").Value       ' usd balance
+                c.Offset(0, 4) = sh.Range("U3").Value       ' estimated P/L
+                c.Offset(0, 5) = sh.Range("V3").Value       ' current value
+                c.Offset(0, 6) = sh.Range("W3").Value       ' account value
+                c.Offset(0, 11) = sh.Range("S17").Value     ' account nft balance (coin)
+                c.Offset(0, 12) = sh.Range("S18").Value     ' account nft balance (usd)
+                c.Offset(0, 13) = sh.Range("AC24").Value    ' ticker
+                c.Offset(0, 17) = sh.Range("S3").Value      ' coin balance (repeat)
+                c.Offset(0, 18) = sh.Range("T3").Value      ' usd balance (repeat)
             End If
         Next c
-    Next Sh
+    Next sh
      
     ActiveSheet.Range("Table1").Borders.LineStyle = xlNone
     
