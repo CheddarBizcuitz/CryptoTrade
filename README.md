@@ -25,13 +25,13 @@ For more information, please check out the [tutorial](https://www.youtube.com/wa
 
 ## Live-Feed Data
 
-CryptoTrade currently uses [Nomics API](https://nomics.com/) to generate free, live-feed data on thousands of cryptocurrencies.
+CryptoTrade currently uses [CoinGecko](https://www.coingecko.com/) to generate free, live-feed data on a number of cryptocurrencies.
 
-Reference to query data can be found at: https://nomics.com/docs/#tag/Currencies
+The original API for this project has been disbanded as of 03/08/2022 due to pull request size issues. For further information, see [v1.0.5.1](https://github.com/CheddarBizcuitz/CryptoTrade/releases/tag/v1.0.5.1).
 
-You can request a free API key at: https://p.nomics.com/cryptocurrency-bitcoin-api
+Reference to query data can be found at: https://www.coingecko.com/en/api/documentation
 
-If required, you will need to enter your key into the Excel data query as: https://api.nomics.com/v1/currencies/ticker?key=enterkeyhere
+No API key required. Data limited to first 1500 rankings.
 
 ## Transferring Data
 
