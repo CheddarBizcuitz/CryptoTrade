@@ -45,7 +45,7 @@ Transferred data can be separated into three categories:
 
 Source code can be updated by running [mImportVB.bas](https://github.com/CheddarBizcuitz/CryptoTrade/blob/main/VBA/mImportVB.bas). This module searches for the folder <mark>"VisualBasic"</mark> on the user's C:\ Drive. You may alter the final path by adjusting the lines below:
 
-**Note:** All Excel objects will be imported as Class Modules (.cls). You will need to manually copy & paste the code into the workbook's corresponding object, then delete the class module(s). Updates to original objects should not be common for future releases, and will most likely be accomplished through updating [Formatting Data](#formatting-data).
+**Note:** All Excel objects will be imported as Class Modules (.cls). You will need to manually copy & paste the code into the workbook's corresponding object, then delete the class module(s). Updates to original objects should not be common for future releases and will most likely be accomplished through updating [Formatting Data](#formatting-data).
 
 #### Root
 ```VBA
@@ -71,7 +71,7 @@ Any updates to the Excel workbook will need to be accomplished through the use o
 
 ### Personal Data
 
-If the transfer of personal data is required, you will need to manually copy & paste the data into the new workbook. This can be achieved through the following steps:
+If the transfer of personal data is required you will need to manually copy & paste the data into the new workbook. This can be achieved through the following steps:
 
 DWB = Destination Workbook (new release)  
 SWB = Source Workbook (current user release)  
